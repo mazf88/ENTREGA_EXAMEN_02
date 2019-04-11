@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Techno
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: zapatama
+Implementation-Vendor-Id: com.poli
+Build-Jdk: 1.8.0_111
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/Techno
+Created-By: Maven Integration for Eclipse
+

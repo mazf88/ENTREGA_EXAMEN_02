@@ -1,0 +1,27 @@
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+  <div>
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Nombres" [(ngModel)]="myUser.name">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Apellidos" [(ngModel)]="myUser.lastname">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Usuario" [(ngModel)]="myUser.nick">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Contraseña" [(ngModel)]="myUser.password">
+    </mat-form-field>
+  </div>
+  <button mat-raised-button color="primary" (click)="addNewUser()">Agregar usuario</button>
+</div>
+<button mat-raised-button color="warn" (click)="back()">Regresar</button>

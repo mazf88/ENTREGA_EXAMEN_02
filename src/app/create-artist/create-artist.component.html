@@ -1,0 +1,35 @@
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+  <div>
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Name" [(ngModel)]="myArtist.name">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Category" [(ngModel)]="myArtist.category">
+    </mat-form-field>
+  </div>
+  <div>    
+    <p>
+      <mat-form-field class="full-width">
+        <textarea matInput placeholder="Description" [(ngModel)]="myArtist.description"></textarea>
+      </mat-form-field>
+    </p>
+  </div>
+<div>
+  <p>
+      <label class="image-upload-container btn btn-bwm">
+        <span>Seleccionar Imagen</span>
+        <input #imageInput
+               type="file"
+               accept="image/*"
+               (change)="processFile(imageInput)">
+      </label>
+  </p>
+</div>
+  <button mat-raised-button color="primary" (click)="addNewArtist()">Agregar Artista</button>
+</div>
+<button mat-raised-button color="warn" (click)="back()">Regresar</button>

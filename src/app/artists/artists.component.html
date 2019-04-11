@@ -1,0 +1,15 @@
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+  <div class="row" style="margin-top: 10px">
+    <div *ngFor="let artist of myArtists" class="col-md-3 col-sm-12 col-xs-12">
+      <app-card-artist image="../../../assets/img/{{artist.image}}" [selectedArtist]="artist"></app-card-artist>
+    </div>
+  </div>
+  <button mat-raised-button color="primary" (click)="createArtist()">Crear Artista</button>
+  <button mat-raised-button color="primary" (click)="createUser()" style="margin-left: 10px">Crear Usuario</button>
+  <div>
+    <button mat-raised-button color="warn" style="margin-top: 10px" (click)="getUsers()">Usuarios</button>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+  <div class="row" style="margin-top: 10px">
+    <div *ngFor="let user of myUsers" class="col-md-3 col-sm-12 col-xs-12">
+      <app-card-user [selectedUser]="user"></app-card-user>
+    </div>
+  </div>
+</div>
+<button mat-raised-button color="primary" (click)="back()">Regresar</button>
